@@ -1,30 +1,49 @@
+**Installation**
+Clone the Repository:
+
+bash
+> git clone https://github.com/strifeserver/sona-labs-exam
 
 
-Installation
-git clone
+Frontend Setup:
+Navigate to sona-labs-exam/sona-labs-fe directory:
 
-sona-labs-exam\sona-labs-fe
-- npm install
+bash
+> cd sona-labs-exam/sona-labs-fe
 
-** change the necessary credentials for testing**
-sona-labs-exam\self-server-php\config.php
+Install dependencies:
 
-return [
+bash
+> npm install
+
+Start the frontend server:
+
+bash
+> npm start
+
+Backend Setup:
+
+Ensure PHP is installed.
+
+Edit sona-labs-exam/self-server-php/config.php file to change necessary credentials for testing:
+
+php
+> return [
     'clientID' => '5170996c-2acb-42b4-b36e-aa294ccb52d9',
     'clientSecret' => '8e8083bc-49b4-4b96-ae5f-275c8358ab03',
-    'frontendBaseUrl' => 'http://localhost:3000',  #REACT URL
-    'backendBaseUrl' => 'http://localhost:8000',  #PHP URL
-    'redirectUri' => 'http://localhost:8000',  
+    'frontendBaseUrl' => 'http://localhost:3000', // REACT URL
+    'backendBaseUrl' => 'http://localhost:8000', // PHP URL
+    'redirectUri' => 'http://localhost:8000',
     'scope' => 'crm.objects.companies.read crm.objects.companies.write crm.objects.contacts.read crm.objects.contacts.write',
     'authUrl' => 'https://app.hubspot.com/oauth/authorize',
     'tokenUrl' => 'https://api.hubapi.com/oauth/v1/token/',
 ];
 
+Run PHP Server:
+Start the PHP server:
 
-
-Run: 
-self-server-php\
+bash
+> cd sona-labs-exam/self-server-php
 php -S localhost:8000
 
-sona-labs-fe\
-npm start
+
