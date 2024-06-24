@@ -1,0 +1,222 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+.guide {
+  border: 2px solid red;
+}
+
+.btn-light {
+  background-color: white !important;
+  color: black !important;
+}
+
+.btn.disabled,
+.btn:disabled,
+fieldset:disabled .btn {
+  opacity: 1 !important;
+  /* or set to initial, unset, etc. */
+  border-color: black;
+}
+
+
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select-arrow {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #000;
+}
+
+
+/* Style the select element */
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+/* Hide the default arrow */
+/* .custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+} */
+/* Create a custom arrow using a pseudo-element */
+.custom-select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 10px;
+  /* Adjust width as needed */
+  height: 10px;
+  /* Adjust height as needed */
+  background: url("../public/arrow.png") no-repeat center center;
+  /* Correct path */
+  background-size: contain;
+  /* Ensure the image scales properly */
+}
+
+.page-link.btn.btn-primary {
+  background-color: white !important;
+  /* Optionally, adjust other styles as needed */
+  color: #000; /* Set text color to black */
+  border-color: #4D60C5; /* Set border color */
+}
+
+
+.buttonColor {
+  background-color: #4A6AF2 !important;
+  color: white !important;
+}
+
+
+
+.rdt_TableHeadRow {
+  background-color: #EAECF0 !important;
+
+}
+
+
+/* styles.css */
+.year-selector {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.year {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.year:hover {
+  background-color: #e0e0e0;
+}
+
+.rdrDefinedRangesWrapper {
+  display: none;
+  /* Hide the default defined ranges */
+}
+
+.date-inputs input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  background-color: #ccc;
+}
+
+.actions button:last-child {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.dateDisplay {
+  width: "136px";
+  height: "44px";
+  margin: "5px";
+  font-size: "14px";
+  text-align: "center";
+
+
+}
+
+.hiddenthis{
+  display:none !important;
+}
+
+/* custom-scrollbar.css */
+.custom-scrollbar {
+  max-height: 460px;
+  overflow-y: auto;
+}
+
+/* width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #EAECF8; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+.year {
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.year.active {
+  background-color: #8390d6;
+  border-radius: 6px;
+  color:white;
+}
+
+.rdrEndEdge{
+  border-radius: 20px !important;
+  background-color: #EE2B7E !important;
+
+}
+.rdrStartEdge{
+
+  background-color: #EE2B7E !important;
+  border-radius: 20px !important;
+}
+
+.rdrInRange{
+  background-color: #bac0e3 !important;
+  color: black !important;
+
+}
+.rdrDayNumber{
+  color: black !important;
+}
